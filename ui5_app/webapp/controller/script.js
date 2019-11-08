@@ -8,7 +8,11 @@
 		
 		if(loading== 100)
 			{clearInterval(id);
-			windwos.open ("MainView.html", "_self")}
+			windwos.open ("Welcome.html", "_self")}
+		else{loading = loading++;
+		if (loading == 90){
+			preload.style.animation = "fadeout 1s ease";
+		}}
 	}
 	
 })();
